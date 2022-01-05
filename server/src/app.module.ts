@@ -2,9 +2,9 @@ import { Module } from "@nestjs/common";
 import { UserModule } from "./user/user.module";
 import { JobModule } from "./job/job.module";
 import { ClusterGroupModule } from "./clusterGroup/clusterGroup.module";
-import { HealthModule } from "./health/health.module";
 import { ACLModule } from "./auth/acl.module";
 import { AuthModule } from "./auth/auth.module";
+import { HealthModule } from "./health/health.module";
 import { SecretsManagerModule } from "./providers/secrets/secretsManager.module";
 import { MorganModule } from "nest-morgan";
 import { ConfigModule, ConfigService } from "@nestjs/config";
@@ -18,9 +18,9 @@ import { GraphQLModule } from "@nestjs/graphql";
     UserModule,
     JobModule,
     ClusterGroupModule,
-    HealthModule,
     ACLModule,
     AuthModule,
+    HealthModule,
     SecretsManagerModule,
     MorganModule,
     ConfigModule.forRoot({ isGlobal: true }),
